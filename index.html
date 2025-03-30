@@ -4,7 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botón con Texto</title>
-    <link rel="stylesheet" href="../Prueba/style.css">
+    <style>
+        button {
+    background-color: #e75a7a; /* Color rosa inicial */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Relleno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Efecto suave */
+}
+
+button:hover {
+    background-color: #fbbaa4; /* Color salmón al pasar el cursor */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0; /* Eliminar márgenes */
+    height: 100vh; /* Altura completa de la ventana */
+    display: flex; /* Activar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    transition: background-color 0.5s ease;
+}
+
+#myText {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+        /* Estilo para el texto */
+        #myText {
+            color: #333; /* Color del texto */
+            font-size: 24px; /* Tamaño de fuente */
+            margin-top: 20px; /* Espacio superior */
+        }
+    </style>
 </head>
 <body>
     <button id="myButton">Presionar</button>
