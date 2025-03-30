@@ -12,3 +12,13 @@ button {
 button:hover {
     background-color: #fbbaa4; /* Darker green on hover */
 }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+#myText {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
