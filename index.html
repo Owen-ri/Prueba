@@ -31,8 +31,8 @@
         }
         #myImage {
             display: none;
-            margin-top: 20px;
-            width: 200px;
+            margin-top: 40px;
+            width: 400px;
             height: auto;
             display: block;
             margin-left: auto;
@@ -43,14 +43,14 @@
 <body>
     <button id="myButton">Presionar</button>
     <p id="myText"></p>
-    <img id="myImage" src="https://via.placeholder.com/200" alt="Imagen mostrada al presionar">
+    <img id="myImage" src="https://th.bing.com/th/id/OIP.v6XGatqCVO7dFVFmM-qdtQAAAA?pid=ImgDet&w=173&h=130&c=7&dpr=1.7" alt="Imagen mostrada al presionar">
     
     <script>
         const colors = ['#FFCDD2', '#C8E6C9', '#BBDEFB', '#D1C4E9', '#FFECB3'];
         let currentColorIndex = 0;
         
         document.getElementById("myButton").addEventListener("click", function() {
-            document.getElementById("myText").innerText = "¡Hola, has presionado el botón!";
+            document.getElementById("myText").innerText = "Estas muy linda<3";
             document.body.style.transition = "background-color 1s ease-in-out";
             document.body.style.backgroundColor = colors[currentColorIndex];
             document.getElementById("myImage").style.display = "block";
