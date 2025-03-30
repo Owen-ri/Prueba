@@ -3,11 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para tu</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Botón que cambia de color</title>
+    <style>
+        button {
+            background-color: #e75a7a; /* Color rosa inicial */
+            color: white; /* Texto blanco */
+            padding: 10px 20px; /* Relleno */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Esquinas redondeadas */
+            cursor: pointer; /* Cursor de puntero al pasar por encima */
+            font-size: 16px; /* Tamaño de fuente */
+            transition: background-color 0.3s ease; /* Efecto suave */
+        }
+
+        button:hover {
+            background-color: #fbbaa4; /* Color salmón al pasar el cursor */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #myText {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-
     <button id="colorButton">Haz clic aquí</button>
     <div id="myText">Presiona el botón para cambiar su color</div>
 
