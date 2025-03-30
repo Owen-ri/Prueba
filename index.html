@@ -11,6 +11,19 @@
             margin-top: 50px;
             transition: background-color 1s ease-in-out;
         }
+        button {
+            background-color: #e75a7a; /* Color rosa inicial */
+            color: white; /* Texto blanco */
+            padding: 10px 20px; /* Relleno */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Esquinas redondeadas */
+            cursor: pointer; /* Cursor de puntero al pasar por encima */
+            font-size: 16px; /* Tamaño de fuente */
+            transition: background-color 0.3s ease; /* Efecto suave */
+        }
+        button:hover {
+            background-color: #fbbaa4; /* Color salmón al pasar el cursor */
+        }
         #myText {
             margin-top: 20px;
             font-size: 18px;
@@ -21,14 +34,16 @@
             margin-top: 20px;
             width: 200px;
             height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
     <button id="myButton">Presionar</button>
-    <br>
     <p id="myText"></p>
-    <img id="myImage" src="https://th.bing.com/th/id/OIP.v6XGatqCVO7dFVFmM-qdtQAAAA?pid=ImgDet&w=173&h=130&c=7&dpr=1.7" alt="Imagen mostrada al presionar">
+    <img id="myImage" src="https://via.placeholder.com/200" alt="Imagen mostrada al presionar">
     
     <script>
         const colors = ['#FFCDD2', '#C8E6C9', '#BBDEFB', '#D1C4E9', '#FFECB3'];
@@ -44,4 +59,3 @@
     </script>
 </body>
 </html>
-
