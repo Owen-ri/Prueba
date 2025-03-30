@@ -3,29 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botón que cambia de color</title>
+    <title>Botón con Texto</title>
     <style>
-        button {
-            background-color: #e75a7a; /* Color rosa inicial */
-            color: white; /* Texto blanco */
-            padding: 10px 20px; /* Relleno */
-            border: none; /* Sin borde */
-            border-radius: 5px; /* Esquinas redondeadas */
-            cursor: pointer; /* Cursor de puntero al pasar por encima */
-            font-size: 16px; /* Tamaño de fuente */
-            transition: background-color 0.3s ease; /* Efecto suave */
-        }
-
-        button:hover {
-            background-color: #fbbaa4; /* Color salmón al pasar el cursor */
-        }
-
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
+            transition: background-color 0.5s ease;
         }
-
         #myText {
             margin-top: 20px;
             font-size: 18px;
@@ -34,23 +19,17 @@
     </style>
 </head>
 <body>
-    <button id="colorButton">Haz clic aquí</button>
-    <div id="myText">Presiona el botón para cambiar su color</div>
-
+    <button id="myButton">Presionar</button>
+    <p id="myText"></p>
+    
     <script>
-        // Obtener referencia al botón
-        const button = document.getElementById('colorButton');
-        
-        // Definir colores para alternar
-        const colors = ['#e75a7a', '#4CAF50', '#2196F3', '#9C27B0', '#FF9800'];
+        const colors = ['#FFCDD2', '#C8E6C9', '#BBDEFB', '#D1C4E9', '#FFECB3'];
         let currentColorIndex = 0;
         
-        // Añadir evento de clic al botón
-        button.addEventListener('click', function() {
-            // Cambiar al siguiente color en la lista
+        document.getElementById("myButton").addEventListener("click", function() {
+            document.getElementById("myText").innerText = "¡Hola, has presionado el botón!";
+            document.body.style.backgroundColor = colors[currentColorIndex];
             currentColorIndex = (currentColorIndex + 1) % colors.length;
-            // Aplicar el nuevo color
-            this.style.backgroundColor = colors[currentColorIndex];
         });
     </script>
 </body>
