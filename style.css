@@ -1,22 +1,24 @@
 button {
-    background-color: #e75a7a; /* Green background */
-    color: white; /* White text */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    background-color: #e75a7a; /* Color rosa inicial */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Relleno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s ease; /* Efecto suave */
 }
 
 button:hover {
-    background-color: #fbbaa4; /* Darker green on hover */
+    background-color: #fbbaa4; /* Color salmón al pasar el cursor */
 }
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 50px;
 }
+
 #myText {
     margin-top: 20px;
     font-size: 18px;
