@@ -5,57 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Botón con Texto</title>
     <style>
-        button {
-    background-color: #e75a7a; /* Color rosa inicial */
-    color: white; /* Texto blanco */
-    padding: 10px 20px; /* Relleno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Esquinas redondeadas */
-    cursor: pointer; /* Cursor de puntero al pasar por encima */
-    font-size: 16px; /* Tamaño de fuente */
-    transition: background-color 0.3s ease; /* Efecto suave */
-}
-
-button:hover {
-    background-color: #fbbaa4; /* Color salmón al pasar el cursor */
-}
-
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    height: 100vh; /* Altura completa de la ventana */
-    display: flex; /* Activar flexbox */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    transition: background-color 0.5s ease;
-}
-
-#myText {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
-        /* Estilo para el texto */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            transition: background-color 1s ease-in-out;
+        }
         #myText {
-            color: #333; /* Color del texto */
-            font-size: 24px; /* Tamaño de fuente */
-            margin-top: 20px; /* Espacio superior */
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #myImage {
+            display: none;
+            margin-top: 20px;
+            width: 200px;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <button id="myButton">Presionar</button>
+    <br>
     <p id="myText"></p>
+    <img id="myImage" src="https://th.bing.com/th/id/OIP.v6XGatqCVO7dFVFmM-qdtQAAAA?pid=ImgDet&w=173&h=130&c=7&dpr=1.7" alt="Imagen mostrada al presionar">
     
     <script>
         const colors = ['#FFCDD2', '#C8E6C9', '#BBDEFB', '#D1C4E9', '#FFECB3'];
         let currentColorIndex = 0;
         
         document.getElementById("myButton").addEventListener("click", function() {
-            document.getElementById("myText").innerText = "Estas bien linda<3";
+            document.getElementById("myText").innerText = "¡Hola, has presionado el botón!";
+            document.body.style.transition = "background-color 1s ease-in-out";
             document.body.style.backgroundColor = colors[currentColorIndex];
+            document.getElementById("myImage").style.display = "block";
             currentColorIndex = (currentColorIndex + 1) % colors.length;
         });
     </script>
 </body>
 </html>
+
